@@ -1,0 +1,116 @@
+      <!-- start nav -->
+      <div class="container">
+        <div class="row">
+          <div class="">    
+              <nav class="navbar navbar-expand-lg bg-white">
+                  <div class="container-fluid">
+                      <a class="navbar-brand" [routerLink]="['/']"><img class="img-fluid" width="150px" src="../assets/public/icon/logo-fit-tour-2023.png" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link ff8c00 fw-bold" aria-current="page" href="tours.html">Tours</a>
+                      </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle ff8c00 fw-bold" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tours nước ngoài
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            </li>
+                          <li class="nav-item">
+                              <a class="nav-link ff8c00 fw-bold" aria-current="page" href="#">Tin tức</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link ff8c00 fw-bold" aria-current="page" href="#">Giới thiệu</a>
+                        </li>
+                          <li class="nav-item">
+                              <a class="nav-link ff8c00 fw-bold" aria-current="page" href="#">Liên hệ</a>
+                          </li>
+                          <li class="nav-item d-lg-none">
+                            <a class="nav-link ff8c00 fw-bold" aria-current="page" href="#">Giỏ hàng</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link ff8c00 fw-bold" aria-current="page" href="#">Tài khoản</a>
+                        </li>
+                              
+                      </ul>
+                      <form class="d-flex" role="search">
+                        <input (keyup.enter)="onSearch(inputsearch.value)"  #inputsearch *ngIf="showForm" class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <i (click)="toggleForm()" class="fa-solid fa-magnifying-glass fa-xl my-auto ms-2"></i>
+                      </form>
+                
+                      <ul class="navbar-nav mb-2 mb-lg-0 text-end">
+                        <div class="d-flex d-none d-lg-block">
+                          <i [routerLink]="['/giohang']" class="fa-solid fa-bag-shopping fa-xl mx-3 position-relative"><div class="position-absolute top-100 start-100 translate-middle"><span class="position-relative badge border border-light rounded-circle bg-warning p-2"><small class="position-absolute top-50 start-50 translate-middle" style="font-size: 10px;">{{productService.getCartLength()}}</small></span></div></i>
+                          <a [hidden]="userService.isLogin()" [routerLink]="['/dangnhap']" href="" class="fa-solid fa-circle-user fa-xl text-black text-decoration-none"></a>
+                          <img [hidden]="!userService.isLogin()" [routerLink]="['/userInfo']" (click)="log()" src="../assets/public/img/{{userService.getUser().image}}" class="rounded-4" alt="..." style="width: 5vh;">
+                        </div>
+                      </ul>
+                      </div>
+                  </div>
+              </nav>
+        </div>
+        </div>
+      </div>
+        <!-- end nav -->
+        <router-outlet />
+      <!-- start footer -->
+      <div class="container">
+        <footer class="">
+          <div class="row">
+              <div class="col-md-12">       
+                  <div class="row">
+                  <div class="col-lg-3 col-6">
+                      <div class="">
+                      <ul class="">
+                          <li class="list-group-item mb-2"><strong>khám phá</strong></li>
+                          <li class="list-group-item">Ứng dụng mobile</li>
+                          <li class="list-group-item">Bảo mật thông tin</li>
+                          <li class="list-group-item">Quy định</li>
+                      </ul>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                      <div class="">
+                          <ul class="">
+                              <li class="list-group-item mb-2"><strong>Công ty</strong></li>
+                              <li class="list-group-item">Giới thiệu</li>
+                              <li class="list-group-item">liên hệ</li>
+                              <li class="list-group-item">Quy chế</li>
+                          </ul>
+                          </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                      <div class="">
+                          <ul class="">
+                              <li class="list-group-item mb-2"><strong>Tham gia trên</strong></li>
+                              <li class="list-group-item">Facebook</li>
+                              <li class="list-group-item">Instagram</li>
+                              <li class="list-group-item">Youtube</li>
+                          </ul>
+                          </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                      <div class="">
+                          <ul class=" text-start">
+                              <li class="list-group-item mb-2"><strong>Chính sách</strong></li>
+                              <li class="list-group-item">Điều khoản</li>
+                              <li class="list-group-item">Điều kiện</li>
+                              <li class="list-group-item">Quyền riêng tư</li>
+                          </ul>
+                          </div>
+                  </div></div>
+          </div>
+          </div>
+          
+    
+      </footer>
+      </div>
+          <!-- end footer -->

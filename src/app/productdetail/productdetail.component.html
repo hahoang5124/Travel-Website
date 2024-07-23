@@ -1,0 +1,206 @@
+<!-- start content -->
+<div class="container mt-3">
+    <div class="row mb-5">
+        <div class="col-sm-12">
+            <div class="row">
+                <aside class="col-xl-6">
+                    <div class=" d-flex justify-content-center">
+                        <a class="rounded-4">
+                        <img class="rounded-4 fit w-100" id="mainImage" src="../assets/public/img/{{productdetail?.image}}" />
+                        </a>
+                    </div>
+                </aside>
+                <div class="col-xl-6">
+                    <h4 class="fw-bold">{{productdetail?.name}}</h4>
+                    <p class="ff8c00 fw-bold fs-4">{{productdetail?.price | number}} đ</p>
+                    <p class="mt-3">{{productdetail?.description}}</p>
+                    <p class="mt-2"><strong>{{productdetail?.locations}}</strong></p>
+                    <hr>
+                    <div class="row mb-5">
+                        <a href="" class="col-md-4 col-sm-4 col-4 text-decoration-none fw-semibold text-dark">
+                            <div class=" text-center mb-4"><i class="ff8c00 fa-solid fa-circle-info fa-2xl"></i></div>
+                            <div class="text-center w-100 fw-bold">DỊCH VỤ</div>
+                            <p class="text-center w-100 text-secondary">{{productdetail?.service}}</p>
+                        </a>
+                        <a href="" class="col-md-4 col-sm-4 col-4 text-decoration-none fw-semibold text-dark">
+                            <div class=" text-center mb-4"><i class="fa-regular fa-calendar-check fa-2xl ff8c00"></i></div>
+                            <div class="text-center w-100 fw-bold">THỜI GIAN</div>
+                            <p class="text-center w-100 text-secondary">{{productdetail?.duration}}</p>
+                        </a>
+                        <a href="" class="col-md-4 col-sm-4 col-4 text-decoration-none fw-semibold text-dark">
+                            <div class=" text-center mb-4"><i class="ff8c00 fa-solid fa-hotel fa-2xl"></i></div>
+                            <div class="text-center w-100 fw-bold">NƠI Ở</div>
+                            <p class="text-center w-100 text-secondary">{{productdetail?.hotel}}</p>
+                        </a>
+                    </div>
+                    <div class="row px-5">
+                        <div class="col-lg-6 mt-1  d-flex justify-content-center">
+                            <div class="input-group quantity w-75 h-50">
+                                <div class="input-group-btn">
+                                    <button (click)="decrease()" [disabled]="quantityInput == 1" class="btn btn-md FF8C00 btn-minus btn-dark border-0" id="decrease" >
+                                    <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <input [(ngModel)]="quantityInput" type="text" class="form-control form-control-sm    text-center" name="productQuantity" id="productQuantity" value="1" min="1" #quantity>
+                                <div class="input-group-btn">
+                                    <button (click)="increase()" class="btn btn-md FF8C00 btn-plus btn-dark border-0" id="increase">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-1  d-flex justify-content-center"><button  (click)="addCart(quantity.value)"  id="addToCartBtn" class="text-center btn FF8C00 btn-dark px-4 border-0">Thêm giỏ hàng</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-sm-12">
+            <h3>Lịch khởi hành Tour Mông Cổ 2024</h3>
+            <hr>
+            <table class="table table-striped">
+                <thead class="table-warning ">
+                    <th class="align-middle text-center">Lịch khởi hành</th>
+                    <th class="align-middle text-center">Giá vé người lớn</th>
+                    <th class="align-middle text-center">Giá vé trẻ em</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-middle text-center">07/06 – 14/06</td>
+                        <td class="align-middle text-center">67.990.000 VNĐ</td>
+                        <td class="align-middle text-center">61.190.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">21/06 – 28/06</td>
+                        <td class="align-middle text-center">67.990.000 VNĐ</td>
+                        <td class="align-middle text-center">61.190.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">05/07 – 12/07</td>
+                        <td class="align-middle text-center">67.990.000 VNĐ</td>
+                        <td class="align-middle text-center">61.190.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">19/07 – 26/07</td>
+                        <td class="align-middle text-center">67.990.000 VNĐ</td>
+                        <td class="align-middle text-center">61.190.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle text-center">02/08 – 09/08</td>
+                        <td class="align-middle text-center">67.990.000 VNĐ</td>
+                        <td class="align-middle text-center">61.190.000 VNĐ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>Đánh giá khách hàng</h3>
+            <hr>
+                <div class="row mb-5">
+                    <div class="col-sm-3">
+                        <img src="../assets/public/img/khach-hang-mr-nam.jpg" class="rounded float-start" alt="..." style="width: 100%;">
+                        <h5 class="fw-bold text-center">MR Nam</h5>
+                    </div>
+                    <div class="col-sm-9">
+                        <form action="" method="post">
+                            <textarea name="content" class="form-control" id="" rows=6 placeholder="Đánh giá của bạn ?"></textarea>
+                            <div class="row">
+                                <div class="rating col-sm-6 mt-2">
+                                    <span class="star"><i class="yellow fa-solid fa-star fa-xl"></i></span>
+                                    <span class="star"><i class="yellow fa-solid fa-star fa-xl"></i></span>
+                                    <span class="star"><i class="yellow fa-solid fa-star fa-xl"></i></span>
+                                    <span class="star"><i class="yellow fa-solid fa-star fa-xl"></i></span>
+                                    <span class="star"><i class="yellow fa-solid fa-star fa-xl"></i></span>
+                                </div>
+                                <div class="text-end mt-2 col-sm-6 pe-0"><button class="btn btn-success btn-lg mx-3 px-5" type="submit">Gửi</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="row my-3 rounded-3 customer-review-container">
+                    <div class="d-none d-md-block col-md-2 text-center">
+                            <img src="../assets/public/img/khach-hang-tam-ho.jpg" class="rounded w-100" alt="...">
+                    </div>
+                    <div class="col-12 col-md-10">
+                        <div class="row">
+                            <div class="col-4 d-block d-md-none col-md-2 text-center">
+                                <img src="../assets/public/img/khach-hang-tam-ho.jpg" class="rounded w-100" alt="...">
+                            </div>
+                            <div class="col-8 mb-2">
+                                <h5 class="fw-bold">Tâm Hồ</h5>
+                                <span>29/9/2023</span>
+                                <div>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                </div>
+                            </div>
+                            <div class="col-12 w-100">
+                                Tôi thực sự vô cùng hài lòng trong chuyến đi ABC với sự giúdiv đỡ của đội ngũ nhân viên giàu kinh nghiệm của Fit Tour. Sự hiếu khách và chăm sóc của họ rất xuất sắc, thực sự ấn tượng.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3 rounded-3 customer-review-container">
+                    <div class="d-none d-md-block col-md-2 text-center">
+                            <img src="../assets/public/img/khach-hang-van-nam.jpg" class="rounded w-100" alt="...">
+                    </div>
+                    <div class="col-12 col-md-10">
+                        <div class="row">
+                            <div class="col-4 d-block d-md-none col-md-2 text-center">
+                                <img src="../assets/public/img/khach-hang-van-nam.jpg" class="rounded w-100" alt="...">
+                            </div>
+                            <div class="col-8 mb-2">
+                                <h5 class="fw-bold">Vân Nam</h5>
+                                <span>29/9/2023</span>
+                                <div>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                </div>
+                            </div>
+                            <div class="col-12 w-100">
+                                Chuyến đi bộ Annapurna Base Camp qua Fit Tour là một trong những chuyến đi bộ đẹp ở vùng Annapurna. Chúng tôi đã có khoảng thời gian tuyệt vời với hướng dẫn viên Max Vũ.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3 rounded-3 customer-review-container">
+                    <div class="d-none d-md-block col-md-2 text-center">
+                            <img src="../assets/public/img/khach-hang-mr-nam.jpg" class="rounded w-100" alt="...">
+                    </div>
+                    <div class="col-12 col-md-10">
+                        <div class="row">
+                            <div class="col-4 d-block d-md-none col-md-2 text-center">
+                                <img src="../assets/public/img/khach-hang-mr-nam.jpg" class="rounded w-100" alt="...">
+                            </div>
+                            <div class="col-8 mb-2">
+                                <h5 class="fw-bold">MR Nam</h5>
+                                <span>29/9/2023</span>
+                                <div>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #F7C531;"></i>
+                                </div>
+                            </div>
+                            <div class="col-12 w-100">
+                                Tôi thực sự vô cùng hài lòng trong chuyến đi ABC với sự giúp đỡ của đội ngũ nhân viên giàu kinh nghiệm của Fit Tour. Sự hiếu khách và chăm sóc của họ rất xuất sắc, thực sự ấn tượng.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <hr>
+        </div>
+    </div>
+</div>
+<!--   end content -->

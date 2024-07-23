@@ -1,0 +1,226 @@
+
+ <!-- start carousel -->
+  <div id="carouselExampleRide" class="carousel slide mt-1" data-bs-ride="carousel">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src="assets/public/img/slide1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+    <img src="assets/public/img/slide2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+    <img src="assets/public/img/slide3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/public/img/slide4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/public/img/slide5.jpg" class="d-block w-100" alt="...">
+        </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+</div>
+<!-- end carousel -->
+<!-- start content -->
+<div class="container mt-5">
+  <!-- start category -->
+<div class="row">
+  <a href="" class="col-md-2 col-sm-4 col-4 text-decoration-none fw-semibold text-dark">
+    <div class=" text-center"><img class="img-fluid w-75" src="assets/public/icon/lich-trinh-tour-du-lich-icon.png" alt=""></div>
+    <div class="text-center w-100 ">Lịch khởi hành</div>
+  </a>
+  <a href="" class="col-md-2 col-sm-4 col-4 text-decoration-none fw-semibold text-dark">
+    <div class=" text-center"><img class="img-fluid w-75" src="assets/public/icon/tour-2024-du-lich-nuoc-ngoai.png" alt=""></div>
+    <div class="text-center w-100 ">Tour nước ngoài</div>
+  </a>
+  <a href="" class="col-md-2 col-sm-4 col-4 text-decoration-none fw-semibold text-dark">
+    <div class=" text-center"><img class="img-fluid w-75" src="assets/public/icon/icon-team-building.jpg" alt=""></div>
+    <div class="text-center w-100 ">Team building</div>
+  </a>
+  <a href="" class="col-md-2 col-sm-4 col-4 text-decoration-none fw-semibold text-dark">
+    <div class=" text-center"><img class="img-fluid w-75" src="assets/public/icon/icon-tour-mua-thu.png" alt=""></div>
+    <div class="text-center w-100 ">Tour mùa thu</div>
+  </a>
+  <a href="" class="col-md-2 col-sm-4 col-4 text-decoration-none fw-semibold text-dark">
+    <div class=" text-center"><img class="img-fluid w-75" src="assets/public/icon/icon-dich-vu-visa.jpg" alt=""></div>
+    <div class="text-center w-100 ">Dịch vụ Visa</div>
+  </a>
+  <a href="" class="col-md-2 col-sm-4 col-4 text-decoration-none fw-semibold text-dark">
+    <div class=" text-center"><img class="img-fluid w-75" src="assets/public/icon/trekking-adventures-icon.png" alt=""></div>
+    <div class="text-center w-100 ">Trekking & Adventures</div>
+  </a>
+  
+</div>
+<!-- end category -->
+<!-- Start những vùng đất thú vị để khám phá -->
+<h3 class="mt-5 mb-4">Những vùng đất thú vị để khám phá</h3>
+<div class="row position-relative z-0">
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="MultiSlideConfig">
+      <div href="" class=" text-decoration-none fw-bold text-dark " ngxSlickItem *ngFor="let cate of category">
+          <div class=" text-center"><img  class="mx-auto" src="assets/public/img/{{cate.img}}" alt=""></div>
+          <div class="text-center w-100 mt-2">{{cate.name}}</div>
+      </div>
+</ngx-slick-carousel>
+<!-- End những vùng đất thú vị để khám phá -->
+<!-- START SIGNATURE TOUR -->
+<div class="mt-5 bg-FFE8D3 py-5 px-5">
+  <h1 class="text-center">SIGNATURE TOUR</h1>
+  <div class="text-center mb-3">
+      <i class="fa-solid fa-slash fa-rotate-by fa-2xl" style="--fa-rotate-angle: 142deg;"></i>
+      <i class="fa-solid fa-star fa-xl"></i>
+      <i class="fa-solid fa-slash fa-rotate-by fa-2xl" style="--fa-rotate-angle: 142deg;"></i>
+  </div>
+  <div class="row mb-5 border bg-white" *ngFor="let p of productGhim | slice:0:4">
+      <div class="col-lg-3 col-md-12 col-xs-12 px-0">
+          <img class="img-fluid" src="assets/public/img/{{p.image}}" alt="">
+      </div>
+      <div class="col-lg-6 col-md-12 col-xs-12 ">
+          <div class="badge rounded-pill bg-04bc44 py-2 px-3 mt-3 mb-4 fs-6">{{p.service}}</div>
+          <h3 class="ff8c00">{{p.name}}</h3>
+          <p class="mt-4 mb-4 fs-12">{{p.description}}</p>
+          <div class="fs-6">Thời gian: <strong>{{p.duration}}</strong></div>
+      </div>
+      <div class="col-lg-3 col-md-12 col-xs-12  d-flex flex-column justify-content-center my-4">
+          <h4 class="fw-bold text-black-50 text-center mt-2">Giá từ</h4>
+          <h3 class="text-center mb-3 FF5C3A fw-bold">{{p.price | number}} VND</h3>
+          <a type="button" [routerLink]="['/productdetail', p.id]" class="btn-dark border-0 w-75 mx-auto btn text-light FF8C00 py-2 text-center"><h5>XEM CHI TIẾT</h5></a>
+      </div>
+  </div>
+  <div class="text-center"><button type="button" class="fw-bold mx-auto btn text-light FF8C00 py-3 px-3 rounded-pill btn-dark border-0 text-center">XEM LỊCH TRÌNH TOUR CỤ THỂ</button></div>
+</div>
+<!-- END SIGNATURE TOUR -->
+<!--   start customer review -->
+<h2 class="text-center mt-5 mb-4">Đánh giá khách hàng</h2>
+<div class="row">
+    <div class="">
+        <section class="mt-4">
+            <div class="container py-5">
+            <div class="row text-center">
+            <div class="col-md-4 mb-5 mb-md-0 position-relative">
+                <div class="card testimonial ">
+                <div class="card-body py-4 mt-2">
+                    <div class="d-flex justify-content-center mb-4 position-absolute top-0 start-50 translate-middle">
+                    <img src="assets/public/img/khach-hang-tam-ho.jpg"
+                        class="rounded-circle shadow-1-strong" width="100" height="100" />
+                    </div>
+                    <h5 class="font-weight-bold mt-4">Anh Tâm Hồ</h5>
+                    <ul class="list-unstyled d-flex justify-content-center mt-3">
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        </ul>
+                    <p class="mb-2 text-center px-2 " >
+                      Tôi thực sự vô cùng hài lòng trong chuyến đi ABC với sự giúp đỡ của đội ngũ nhân viên giàu kinh nghiệm của Fit Tour. Sự hiếu khách và chăm sóc của họ rất xuất sắc, thực sự ấn tượng.
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 mt-3 mb-md-0 position-relative">
+                <div class="card testimonial ">
+                <div class="card-body py-4 mt-2">
+                    <div class="d-flex justify-content-center mb-4 position-absolute top-0 start-50 translate-middle">
+                    <img src="assets/public/img/khach-hang-mr-nam.jpg"
+                        class="rounded-circle shadow-1-strong" width="100" height="100" />
+                    </div>
+                    <h5 class="font-weight-bold mt-4">Anh Mr Nam</h5>
+                    <ul class="list-unstyled d-flex justify-content-center mt-3">
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        </ul>
+                    <p class="mb-2 text-center px-2" >
+                      Leh Ladakh thật xuất sắc! Chúng tôi đã thấy tất cả các điểm dừng chính và hơn thế nữa. Tôi hoàn toàn tận hưởng thời gian của mình và sẽ giới thiệu chuyến tham quan cho bạn bè và gia đình...
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 mt-3 mb-md-0 position-relative">
+                <div class="card testimonial">
+                <div class="card-body py-4 mt-2">
+                    <div class="d-flex justify-content-center mb-4 position-absolute top-0 start-50 translate-middle">
+                    <img src="assets/public/img/khach-hang-van-nam.jpg"
+                        class="rounded-circle shadow-1-strong" width="100" height="100" />
+                    </div>
+                    <h5 class="font-weight-bold mt-4">Chị Vân Nam</h5>
+                    <ul class="list-unstyled d-flex justify-content-center mt-3">
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ffb90a;"></i>
+                        </li>
+                        </ul>
+                    <p class="mb-2 text-center px-2 " >
+                      Chuyến đi bộ Annapurna Base Camp qua Fit Tour là một trong những chuyến đi bộ đẹp ở vùng Annapurna. Chúng tôi đã có khoảng thời gian tuyệt vời với hướng dẫn viên Max Vũ...
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+    </div>
+</div>
+<h3 class="mt-5 mb-3">Khách hàng thân thiết của Fit Tour</h3>
+<div class="row position-relative z-0 mb-5">
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="MultiSlideConfig">
+    <a href="" class=" text-decoration-none fw-bold text-dark " ngxSlickItem>
+      <div class=" text-center"><img  class="mx-auto" src="assets/public/icon/logo-1.jpg" alt=""></div>
+    </a>
+    <a href="" class=" text-decoration-none fw-bold text-dark " ngxSlickItem>
+      <div class=" text-center"><img class="mx-auto" src="assets/public/icon/logo-2.jpg" alt=""></div>
+    </a>
+    <a href="" class=" text-decoration-none fw-bold text-dark" ngxSlickItem>
+      <div class=" text-center"><img  class="mx-auto" src="assets/public/icon/logo3.jpg" alt=""></div>
+    </a>
+    <a href="" class=" text-decoration-none fw-bold text-dark" ngxSlickItem>
+      <div class=" text-center"><img  class="mx-auto" src="assets/public/icon/logo4.jpg" alt=""></div>
+    </a>
+    <a href="" class=" text-decoration-none fw-bold text-dark" ngxSlickItem>
+      <div class=" text-center"><img class="mx-auto" src="assets/public/icon/images1.png" alt=""></div>
+    </a>
+</ngx-slick-carousel>
+  <!-- end customer review -->
+</div>
+<!--   end content -->
+slickz

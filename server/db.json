@@ -1,0 +1,255 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Tour du lịch Ai Cập - Chạm vào kỳ quan",
+      "price": 77900000,
+      "image": "du-khach-xem-xet-chi-tiet-cac-hinh-ve-ai-cap-co-dai-q05oalkrigwa7pj61hklnua91lvlwk5w5nsk4yo7xc (1).jpg",
+      "description": "Tour du lịch Ai Cập 2024 trọn gói với nhiều hoạt động: cưỡi lạc đà, đi du thuyền 5 sao trên sông Nile, đốt lửa trại, bay khinh khí cầu ở Luxor,…",
+      "locations": "Tuyến điểm: CAIRO – SA MẠC SAHARA- ỐC ĐẢO SIWA – CỐ ĐÔ LUXOR – ASWAN – SÔNG NILES",
+      "service": "trọn gói",
+      "duration": "12 ngày 11 đêm",
+      "hotel": "trọn gói",
+      "ghim": 1,
+      "quantity": 10,
+      "startDay": "1/1/2024",
+      "endDay": "15/1/2024",
+      "categoryId": 1
+    },
+    {
+      "id": "2",
+      "name": "Tour du lịch Ai Cập và Jordan 12 ngày 11 đêm trọn gói",
+      "price": 60000000,
+      "image": "tour-ai-cap-jordan-fittour-qlvcymb9al61v1ipozfvlnx2ym9ocg3o70jd72juow.jpg",
+      "description": "Tour du lịch liên tuyến Ai Cập và Jordan trọn gói 12 ngày 11 đêm, hành trình luxury với dịch vụ lưu trú 4-5 sao, vé máy bay quốc tế và nội địa, phí Visa,…",
+      "locations": "Tuyến điểm: CAIRO – SA MẠC SAHARA- ỐC ĐẢO SIWA – CỐ ĐÔ LUXOR – ASWAN – SÔNG NILES",
+      "service": "trọn gói",
+      "duration": "12 ngày 11 đêm",
+      "hotel": "trọn gói",
+      "ghim": 1,
+      "quantity": 10,
+      "startDay": "1/1/2024",
+      "endDay": "15/1/2024",
+      "categoryId": 1
+    },
+    {
+      "id": "3",
+      "name": "Tour du lịch Israel – Jordan – Ai Cập 14 ngày 13 đêm",
+      "price": 67990000,
+      "image": "thanh-pho-co-jordan-pwuof0o4nzx0g82t2q4qu45dlck7xe499luk6bkysg.jpg",
+      "description": "Tour du lịch Israel – Jordan – Ai Cập 14 ngày 13 đêm khám phá kỳ quan Khu thành cổ Petra, lâu đài Ajloun, biển hồ Galilee, sa mạc Wadi Rum.",
+      "locations": "Fit Tour – Nhà cung cấp các tour du lịch có Guu trải nghiệm đặc biệt dành cho du khách.",
+      "service": "trọn gói",
+      "duration": "14 ngày 13 đêm",
+      "hotel": "trọn gói",
+      "ghim": 1,
+      "quantity": 10,
+      "startDay": "1/1/2024",
+      "endDay": "15/1/2024",
+      "categoryId": 1
+    },
+    {
+      "id": "4",
+      "name": "Tour Trung Đông 15 ngày: Jordan - Israel - Palestin - Ai Cập",
+      "price": 84500000,
+      "image": "khach-fit-tour-tai-ai-cap-q05oawutshbq312s7mg4hrfs68c0gxeo77mdwa7huo.jpg",
+      "description": "Tour Trung Đông 15 ngày mang đến hành trình khám phá các thánh địa, kỳ quan đầy hấp dẫn cho du khách.",
+      "locations": "Fit Tour – Nhà cung cấp các tour du lịch có Guu trải nghiệm đặc biệt dành cho du khách.",
+      "service": "trọn gói",
+      "duration": "15 ngày 14 đêm",
+      "hotel": "trọn gói",
+      "ghim": 1,
+      "quantity": 10,
+      "startDay": "1/1/2024",
+      "endDay": "15/1/2024",
+      "categoryId": 1
+    },
+    {
+      "id": "5",
+      "name": "Tour Trekking Everest Base Camp 2023",
+      "price": 67990000,
+      "image": "bat-dau-hanh-trinh-chinh-phuc-himalayas-pxjouaehj3z7zt37nwknhqg66rtiwrhsyarb7r4ysg.jpg",
+      "description": "Trekking đến Trại căn cứ Everest Base Camp, giữa thiên nhiên khổng lồ với sự tự do tột cùng. Những trải nghiệm chơi board game trong các quán trà nhỏ, tìm hiểu cuộc sống người bản địa Sherpa hay ngắm hoàng hôn trên đỉnh Everest.",
+      "locations": "Fit Tour – Nhà cung cấp các tour du lịch có Guu trải nghiệm đặc biệt dành cho du khách.",
+      "service": "trọn gói",
+      "duration": "3 ngày 2 đêm",
+      "hotel": "trọn gói",
+      "ghim": 0,
+      "quantity": 10,
+      "startDay": "1/1/2024",
+      "endDay": "15/1/2024",
+      "categoryId": 1
+    },
+    {
+      "id": "6",
+      "name": "Tour du lịch Bhutan và Nepal 9 ngày 8 đêm",
+      "price": 67990000,
+      "image": "dung-chan-tham-quan-tu-vien-o-nepal-prhr8lpptklprhe9qfk76erqw8xsr0kvtqy3t08o4g.jpg",
+      "description": "Tour du lịch Mông Cổ 8 ngày 7 đêm trọn gói với hành trình lưu trú tiêu chuẩn 4 sao, trải nghiệm cưỡi ngựa, ngủ lều, khám phá vườn quốc gia.",
+      "locations": "Fit Tour – Nhà cung cấp các tour du lịch có Guu trải nghiệm đặc biệt dành cho du khách.",
+      "service": "trọn gói",
+      "duration": "3 ngày 2 đêm",
+      "hotel": "trọn gói",
+      "ghim": 0,
+      "quantity": 10,
+      "startDay": "1/1/2024",
+      "endDay": "15/1/2024",
+      "categoryId": 1
+    },
+    {
+      "id": "7",
+      "name": "Tour du lịch Bhutan 6 ngày 5 đêm",
+      "price": 67990000,
+      "image": "du-khach-du-lich-co-guu-chup-hinh-trong-chuyen-du-lich-bhutan-phu9uqr2oi0thu9ijexdhlmg9mxh9qhpgahbj8oaow.jpg",
+      "description": "Tour du lịch Bhutan 6 ngày 5 đêm với chương trình thiết kế riêng cung Himalayas. Chương trình đến các địa danh nổi bật của Bhutan: Paro, Thimphu và Punakha.",
+      "locations": "Fit Tour – Nhà cung cấp các tour du lịch có Guu trải nghiệm đặc biệt dành cho du khách.",
+      "service": "trọn gói",
+      "duration": "3 ngày 2 đêm",
+      "hotel": "trọn gói",
+      "ghim": 0,
+      "quantity": 10,
+      "startDay": "1/1/2024",
+      "endDay": "15/1/2024",
+      "categoryId": 1
+    },
+    {
+      "id": "8",
+      "name": "Tour du lịch Sikkim - The last Shangrila in Himalaya",
+      "price": 47990000,
+      "image": "tour-du-lich-sikkim-q1gtkacja2i1vpx63j1j1jju3lfndemoixrs24l9nk.jpg",
+      "description": "Trong chuyến tham quan này, bạn sẽ được ngắm nhìn những cảnh quan tráng lệ của Sikkim bao gồm hồ, sông và thung lũng. Bạn cũng sẽ đến thăm các tu viện cổ xưa, quan sát văn hóa truyền thống của Tây Tạng và nhìn sâu vào cuộc sống hàng ngày.",
+      "locations": "Fit Tour – Nhà cung cấp các tour du lịch có Guu trải nghiệm đặc biệt dành cho du khách.",
+      "service": "trọn gói",
+      "duration": "3 ngày 2 đêm",
+      "hotel": "trọn gói",
+      "ghim": 0,
+      "quantity": 10,
+      "startDay": "1/1/2024",
+      "endDay": "15/1/2024",
+      "categoryId": 1
+    },
+    {
+      "id": "9",
+      "name": "Tour Trung Quốc 7 ngày 7 đêm (Khám phá Trung Nguyên)",
+      "price": 67990000,
+      "image": "tour-trung-quoc-7n7d-5-sao-toan-chang-qk33i102rau93d1b7rerp8ognhf6j81mak2pghg274.jpg",
+      "description": "Tour du lịch Mông Cổ 8 ngày 7 đêm trọn gói với hành trình lưu trú tiêu chuẩn 4 sao, trải nghiệm cưỡi ngựa, ngủ lều, khám phá vườn quốc gia.",
+      "locations": "Fit Tour – Nhà cung cấp các tour du lịch có Guu trải nghiệm đặc biệt dành cho du khách.",
+      "service": "trọn gói",
+      "duration": "3 ngày 2 đêm",
+      "hotel": "trọn gói",
+      "ghim": 0,
+      "quantity": 10,
+      "startDay": "1/1/2024",
+      "endDay": "15/1/2024",
+      "categoryId": 1
+    },
+    {
+      "id": "10",
+      "name": "Tour Quý Châu 6 ngày 5 đêm",
+      "price": 67990000,
+      "image": "tour-du-lich-quy-chau-fit-tour-qis5ngz39ox2xumgaotwfmnt6n7flp2mzgk6h9g65c.jpg",
+      "description": "Bắt đầu chuyến du lịch Quý Dương 6 ngày 5 đêm hấp dẫn, nơi mỗi ngày mở ra với những bữa sáng thú vị và những chuyến khám phá văn hóa quyến rũ.",
+      "locations": "Fit Tour – Nhà cung cấp các tour du lịch có Guu trải nghiệm đặc biệt dành cho du khách.",
+      "service": "trọn gói",
+      "duration": "3 ngày 2 đêm",
+      "hotel": "trọn gói",
+      "ghim": 0,
+      "quantity": 10,
+      "startDay": "1/1/2024",
+      "endDay": "15/1/2024",
+      "categoryId": 1
+    },
+    {
+      "id": "11",
+      "name": "Tour Vân Nam mùa xuân 8 ngày 7 đêm",
+      "price": 67990000,
+      "image": "tour-van-nam-mua-xuan-8n7d-fittour-qhwnkbwsvpn320bn4flwtps7ukzhzj5krvitcm99uo.jpg",
+      "description": "Tour Vân Nam 8 ngày 7 đêm vào mùa xuân là một hành trình tuyệt vời đưa du khách đến khám phá những vùng đất tuyệt diệu và tràn ngập sắc màu mùa xuân tại vùng miền phía Nam của Trung Quốc.",
+      "locations": "Fit Tour – Nhà cung cấp các tour du lịch có Guu trải nghiệm đặc biệt dành cho du khách.",
+      "service": "trọn gói",
+      "duration": "3 ngày 2 đêm",
+      "hotel": "trọn gói",
+      "ghim": 0,
+      "quantity": 11,
+      "startDay": "1/1/2024",
+      "endDay": "15/1/2024",
+      "categoryId": 1
+    },
+    {
+      "id": "12",
+      "name": "Tour Cáp Nhĩ Tân 6 ngày 5 đêm",
+      "price": 77990000,
+      "image": "khung-canh-lang-tuyet-cap-nhi-tan-buoi-sang-q9o9nmr2h2u6b79cuvkvb86gsnaw8ghiaqg32vwyzk.jpg",
+      "description": "Bắt đầu chuyến du lịch Quý Dương 6 ngày 5 đêm hấp dẫn, nơi mỗi ngày mở ra với những bữa sáng thú vị và những chuyến khám phá văn hóa quyến rũ.",
+      "locations": "Fit Tour – Nhà cung cấp các tour du lịch có Guu trải nghiệm đặc biệt dành cho du khách.",
+      "service": "trọn gói",
+      "duration": "3 ngày 2 đêm",
+      "hotel": "trọn gói",
+      "ghim": 0,
+      "quantity": 10,
+      "startDay": "1/1/2024",
+      "endDay": "15/1/2024",
+      "categoryId": 1
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "name": "Tour ai cập",
+      "img": "tour-ai-cap-standee-240x300.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Tour Himalaya",
+      "img": "standee-tour-himalayas-2024-240x300.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Tour Trung Quốc",
+      "img": "standee-tour-trung-quoc-2024-240x300 (2).jpg"
+    },
+    {
+      "id": "4",
+      "name": "Tour Moto Trip",
+      "img": "standee-tour-xe-may-chau-au-240x300.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Tour Silk Road",
+      "img": "standee-tour-con-duong-to-lua-240x300.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "Hoàng Nhật Hà",
+      "email": "khahoang5124@gmail.com",
+      "phone": "0949518784",
+      "password": "Aa111111@",
+      "image": "defaul.png",
+      "role": "user"
+    },
+    {
+      "password": "$2a$10$nvyZKZrCD/sHehbP5N9KFeZPcNdb/xGtKEBl.pQ0PcrI1jGFhC8uu",
+      "id": "c8d8"
+    },
+    {
+      "id": "21e5",
+      "name": "q0lkha24l0p@gmail.com",
+      "password": "$2a$10$BIkZbqjiZgyXM8IQj75hcegfApS/4LLbeMiJCDwD7DQqKqRx/0h8W",
+      "email": "q0lkha25l0p@gmail.com",
+      "phone": "0949518784",
+      "role": "user"
+    },
+    {
+      "id": "c03c",
+      "name": "Hà Hoàng",
+      "password": "$2a$10$LluAOs4gw9RKmb3aV8OT1eNfMzQ/1PMpxUFT89aGHABNXPGapd3Ru",
+      "email": "q0lkha24l0p@gmail.com",
+      "phone": "0336377269",
+      "image": "khach-hang-tam-ho.jpg",
+      "role": "user"
+    }
+  ]
+}

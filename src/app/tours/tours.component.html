@@ -1,0 +1,64 @@
+<!-- start content -->
+<!--   Start banner -->
+<div class=" position-relative">
+    <img class="shadow w-100" src="../assets/public/img/Dang-Thuy-Duong-du-ky-o-Zanskar.jpeg" alt="">
+    <div class="w-100 position-absolute bottom-50 text-center">
+      <h1 class="text-light">Tour du lịch</h1>
+      <div class="text-light">
+      </div>
+    </div>
+  </div>
+  <!--   End banner -->
+  <!--   start Tours -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-xl-3 bg-FFF9F4 mt-3 ps-4">
+        <h2 class="mb-5 mt-3">Lọc kết quả</h2>
+        <form action="">
+          <label for="location" class="mb-2"><strong>Sắp xếp</strong></label>
+          <select id="location" class="form-select form-select-lg mb-3" name="selectedSort"  [(ngModel)]="selectedSort" (change)="onSortChange()">
+            <option value="asc">Sắp xếp theo giá</option>
+            <option value="asc">Giá tăng dần</option>
+            <option value="desc">Giá giảm dần</option>
+          </select>
+        </form>
+      </div>
+      <div class="col-lg-12 col-xl-9">
+        <div class="row">
+          <div class="col-lg-6 col-xl-4 mb-1 mt-5" *ngFor="let p of products|paginate:{itemsPerPage:psize,currentPage:currentPage}">
+            <div class="card">
+              <img src="../assets/public/img/{{p.image}}" class="img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-start mt-3 mb-4" style="height: 80px;">{{p.name}}</h4>
+                <div class="d-flex align-items-center">
+                  <span class="fw-bold FF5656 fs-5"><i class="fa-solid fa-money-bill"></i> {{p.price | number}}đ</span>
+                  <a href="./detail.html" class="btn btn-outline-dark ms-auto">Xem chi tiết</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pagination-controls class="pagination d-flex justify-content-center mt-3" (pageChange)="currentPage=$event"></pagination-controls>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row ps-2">
+      <h3 class="mt-5 mb-4">Những vùng đất thú vị để khám phá</h3>
+      <div class="row position-relative z-0">
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="MultiSlideConfig">
+          <a href="" class=" text-decoration-none fw-bold text-dark  " ngxSlickItem *ngFor="let p of randomProducts">
+            <div class=" text-center"><img  class="mx-auto" width="240px" height="300px" src="../assets/public/img/{{p.image}}" alt=""></div>
+            <div class="text-center w-100 mt-2 px-5">{{p.name}}</div>
+          </a>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+  </div>
+  <!--   end tours -->
+  <!--   Start banner -->
+   <div class=" position-relative mt-5">
+    <img class="shadow w-100"  src="../assets/public/img/binh-minh-tren-day-nui-himalayas.jpg" alt="">
+  </div> 
+  <!--   End banner -->
+  <!--   end content -->

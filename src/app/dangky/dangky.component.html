@@ -1,0 +1,85 @@
+<section class="h-100 border-primary" style="background-color: #ffd6b2;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-5 d-none d-md-block">
+                <img src="https://dulichcoguu.com/wp-content/uploads/2023/07/binh-minh-tren-day-nui-himalayas-mobile-banner.jpg"
+                  alt="login form" class="img-fluid h-100" style="border-radius: 1rem 0 0 1rem;" />
+              </div>
+              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+  
+                  <form (ngSubmit)="onSubmit()" [formGroup]="signUpForm">
+  
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                        <img src="../assets/public/icon/logo-fit-tour-2023.png" alt="">
+                    </div>
+  
+                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Tham gia với chúng tôi</h5>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example17">họ và tên:</label>
+                        <input formControlName="name" [(ngModel)]="username" required type="text" name="name" id="form2Example17" class="form-control form-control-lg" />
+                        <div *ngIf="signUpForm.controls['name'].invalid && (signUpForm.controls['name'].touched || signUpForm.controls['name'].dirty)">
+                            <small  class="text-danger">Tên đăng nhập không được để trống</small>
+                        </div>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example17">Email:</label>
+                        <input formControlName="email" type="email" name="email" id="form2Example17" class="form-control form-control-lg" [(ngModel)]="email" required email/>
+                        <div *ngIf="signUpForm.controls['email'].invalid && (signUpForm.controls['email'].touched || signUpForm.controls['email'].dirty)">
+                            <small  *ngIf="signUpForm.controls['email'].errors?.['required']" class="text-danger">email không được để trống</small>
+                            <small *ngIf="signUpForm.controls['email'].errors?.['email']" class="text-danger">email không hợp lệ</small>
+                        </div>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example174">Số điện thoại:</label>
+                        <input formControlName="phone" type="text" id="form2Example174" class="form-control form-control-lg" name="phone" [(ngModel)]="phone" required/>
+                        <div *ngIf="signUpForm.controls['phone'].invalid && (signUpForm.controls['phone'].touched || signUpForm.controls['phone'].dirty)">
+                          <small  *ngIf="signUpForm.controls['phone'].errors?.['required']" class="text-danger">Số điện thoại không được để trống</small>
+                          <small *ngIf="signUpForm.controls['phone'].errors?.['pattern']" class="text-danger">Số điện thoại không hợp lệ</small>
+                      </div>
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form2Example174">Địa chỉ:</label>
+                      <input formControlName="address" type="text" id="form2Example174" class="form-control form-control-lg" name="address" [(ngModel)]="address" required/>
+                      <div *ngIf="signUpForm.controls['address'].invalid && (signUpForm.controls['address'].touched || signUpForm.controls['address'].dirty)">
+                        <small  class="text-danger">Địa chỉ không được để trống</small>
+                    </div>
+                  </div>
+  
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example27">Mật khẩu:</label>
+                        <input formControlName="password" type="password" id="form2Example27" class="form-control form-control-lg" name="password" [(ngModel)]="password" required/>
+                        <div *ngIf="signUpForm.controls['password'].invalid && (signUpForm.controls['password'].touched || signUpForm.controls['password'].dirty)">
+                          <small  *ngIf="signUpForm.controls['password'].errors?.['required']" class="text-danger">Mật khẩu không được để trống</small>
+                          <small *ngIf="signUpForm.controls['password'].errors?.['pattern']" class="text-danger">Mật khẩu không hợp lệ</small>
+                      </div>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example27">Nhập lại Mật khẩu:</label>
+                        <input formControlName="repassword" type="password" id="form2Example27" class="form-control form-control-lg" name="repassword" [(ngModel)]="repassword" required/>
+                        <div *ngIf="signUpForm.controls['repassword'].touched || signUpForm.controls['repassword'].dirty">
+                          <small  *ngIf="signUpForm.controls['repassword'].errors?.['required']" class="text-danger">Mật khẩu không được để trống</small>
+                          <small *ngIf="repassword != '' && repassword != password" class="text-danger">Mật khẩu và nhập lại mật khẩu không khớp</small>
+                      </div>
+                    </div>
+  
+                    <div class="pt-1 mb-4">
+                      <button  id="signupButton" [disabled]="true" class="btn btn-dark btn-lg btn-block" type="submit">Đăng ký</button>
+                    </div>
+  
+                    <a class="small text-muted" href="#!">Quên mật khẩu ?</a>
+                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Bạn Đã có tài khoản ? <a [routerLink]="['/dangnhap']" href=""
+                        style="color: #393f81;">Đăng nhập ngay</a></p>
+                  </form>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
